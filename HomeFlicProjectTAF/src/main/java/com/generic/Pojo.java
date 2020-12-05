@@ -6,8 +6,6 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-//pojo is a central class ,getters and setters methods.{Web Driver , Config , Wait , Utility , WSF }
-
 public class Pojo {
 
 	private WebDriver driver;

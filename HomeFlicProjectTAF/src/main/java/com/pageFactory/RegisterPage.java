@@ -56,15 +56,13 @@ public class RegisterPage {
 
 	}
 
-	
-	  public String setPhone(String strPhone) {
-	  objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_Phone,
-	  objPojo.getObjUtilities().getRandomNumberString(7)+768); 
-	  
-	  return strPhone;
-	  
-	  }
-	 
+	public String setPhone(String strPhone) {
+		objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_Phone,
+				objPojo.getObjUtilities().getRandomNumberString(7) + "678");
+
+		return strPhone;
+
+	}
 
 	/*
 	 * public String setPhone(String strPhone) {

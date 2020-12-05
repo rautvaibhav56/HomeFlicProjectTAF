@@ -10,18 +10,18 @@ import com.generic.BaseTest;
 import com.pageFactory.MyProfilePage;
 import com.popupFactory.ForgotPasswordPage;
 
-public class LoginTest extends BaseTest{
-	
-	//Test Scripts
-	
+public class LoginTest extends BaseTest {
+
+	// Test Scripts
+
 	private LoginLogoutFlow objLoginLogoutFlow;
 	private MyProfilePage objMyProfilePage;
 	private ForgotPasswordFlow objForgotPasswordFlow;
-	
+
 	public void initializeWebPages() {
-		
-		objLoginLogoutFlow= new LoginLogoutFlow(this);
-		objMyProfilePage =new MyProfilePage(this);
+
+		objLoginLogoutFlow = new LoginLogoutFlow(this);
+		objMyProfilePage = new MyProfilePage(this);
 		objForgotPasswordFlow = new ForgotPasswordFlow(this);
 	}
 
@@ -33,19 +33,18 @@ public class LoginTest extends BaseTest{
 
 	@Test(priority = 1, enabled = false)
 	public void TCID_101_VerifyLogin() {
-		
+
 		this.loadTestData("TCID_101_VerifyLogin");
 		objLoginLogoutFlow.doLogin();
 		objMyProfilePage.verifyLogoutLinkDisplayed();
 	}
-	
-	
+
 	@Test(priority = 1, enabled = true)
 	public void TCID_102_ForgotPassword() {
-		
+
 		this.loadTestData("TCID_102_ForgotPassword");
 		objForgotPasswordFlow.clickOnForgotPasswordLink();
-		
+
 	}
 
 	@AfterClass
@@ -54,8 +53,3 @@ public class LoginTest extends BaseTest{
 	}
 
 }
-
-	
-	
-
-

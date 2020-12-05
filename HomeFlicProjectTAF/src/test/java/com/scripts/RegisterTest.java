@@ -11,12 +11,11 @@ import com.pageFactory.RegisterPage;
 public class RegisterTest extends BaseTest {
 
 	private RegisterFlow objRegisterFlow;
-	
 
 	public void initializeWebPages() {
 
 		objRegisterFlow = new RegisterFlow(this);
-			}
+	}
 
 	@BeforeClass
 	public void initializeWebEnvironmentAndTestDataSetupForRegisterNewUser() {
@@ -24,16 +23,16 @@ public class RegisterTest extends BaseTest {
 		this.initializeWebEnvironment("excelFiles/VMR");
 
 	}
+
 	@Test
 	public void TCID_101_doRegister() {
-		
+
 		objRegisterFlow.doRegister();
 	}
-	
 
 	@AfterClass
 	public void tearDownEnvironment() {
-		//this.getDriver().close();
+		// this.getDriver().close();
 	}
 
 }

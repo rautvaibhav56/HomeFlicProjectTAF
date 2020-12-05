@@ -11,10 +11,9 @@ public class HomePage {
 
 	By loc_Link_Homeflic_Login = By.xpath("//a[text()='Register']/preceding::li[1]/a[text()='Login']");
 	By loc_Link_Homeflic_Register = By.xpath("//a[text()='Login']/following::li[1]/a[text()='Register']");
-	
 
 	public HomePage(Pojo pojo) {
- 
+
 		this.objPojo = pojo;
 	}
 
@@ -27,6 +26,5 @@ public class HomePage {
 		objPojo.getObjUtilities().logReporter("Click Register Link on Homeflic Home Page ",
 				objPojo.getObjWrapperSeleniumFunctions().click(loc_Link_Homeflic_Register));
 	}
-	
-	
+
 }

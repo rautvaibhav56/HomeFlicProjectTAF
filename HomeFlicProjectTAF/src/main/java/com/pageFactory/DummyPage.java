@@ -8,15 +8,15 @@ public class DummyPage {
 	// Moduler Centralized Pages
 
 	private Pojo objPojo;
-	
+
 	public DummyPage(Pojo pojo) {
 
 		this.objPojo = pojo;
 	}
 
 	By loc_Link_Homeflic_Login = By.linkText("Login");
-	By loc_inp_UserName = By.xpath("//input[@name='email'][@placeholder='Username or Email']"); 
-	By loc_inp_Password = By.xpath("//input[@name='password']"); 															
+	By loc_inp_UserName = By.xpath("//input[@name='email'][@placeholder='Username or Email']");
+	By loc_inp_Password = By.xpath("//input[@name='password']");
 	By loc_btn_Login = By.xpath("//button[text()='Log In']");
 
 	public void printTestDataBean() {
@@ -34,9 +34,12 @@ public class DummyPage {
 
 		objPojo.getObjUtilities().logReporter("Display Full Name : " + objPojo.getObjTestDataBean().getStrFullName(),
 				true);
-		objPojo.getObjUtilities().logReporter("Display First Name : " + objPojo.getObjTestDataBean().getStrFirstName(),true);
-		objPojo.getObjUtilities().logReporter("Display Last Name : " + objPojo.getObjTestDataBean().getStrLastName(),true);
-		objPojo.getObjUtilities().logReporter("Display Address : " + objPojo.getObjTestDataBean().getStrAddress(),true);
+		objPojo.getObjUtilities().logReporter("Display First Name : " + objPojo.getObjTestDataBean().getStrFirstName(),
+				true);
+		objPojo.getObjUtilities().logReporter("Display Last Name : " + objPojo.getObjTestDataBean().getStrLastName(),
+				true);
+		objPojo.getObjUtilities().logReporter("Display Address : " + objPojo.getObjTestDataBean().getStrAddress(),
+				true);
 	}
 
 	public void clickLinkLogin() {

@@ -86,8 +86,6 @@ public class WrapperSeleniumFunctions extends LoadableComponent<WrapperSeleniumF
 		}
 	}
 
-	
-	
 	public boolean dropDown(By locator, String fieldValue) {
 
 		try {
@@ -108,8 +106,6 @@ public class WrapperSeleniumFunctions extends LoadableComponent<WrapperSeleniumF
 		}
 	}
 
-
-	
 	@Override
 	protected void load() {
 		// TODO Auto-generated method stub
@@ -121,7 +117,5 @@ public class WrapperSeleniumFunctions extends LoadableComponent<WrapperSeleniumF
 		// TODO Auto-generated method stub
 
 	}
-
-	
 
 }

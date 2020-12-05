@@ -2,11 +2,12 @@ package com.flows;
 
 import java.util.Properties;
 
+import com.generic.BaseTest;
 import com.generic.Pojo;
 import com.pageFactory.HomePage;
 import com.pageFactory.RegisterPage;
 
-public class RegisterFlow {
+public class RegisterFlow extends BaseTest {
 
 	private Pojo objPojo;
 	private String testData = "";
@@ -19,7 +20,7 @@ public class RegisterFlow {
 		this.objPojo = pojo;
 		objHomePage = new HomePage(objPojo);
 		objRegisterPage = new RegisterPage(objPojo);
-
+		objConfig = new Properties();
 	}
 
 	public String doRegister() {
@@ -30,8 +31,8 @@ public class RegisterFlow {
 		objRegisterPage.setFirstName();
 		objRegisterPage.setLastName();
 		objRegisterPage.setPhone("");
+		// objRegisterPage.setPhone(objConfig.getProperty("strPhone")+objPojo.getObjUtilities().getRandomNumberString(7));
 		objRegisterPage.setEmail();
-	//	objRegisterPage.setPhone(objConfig.getProperty("strPhone")+objPojo.getObjUtilities().getRandomNumberString(7));
 		objRegisterPage.setPassword("student@123");
 		objRegisterPage.setUserType();
 		// objRegisterPage.clickRegister();

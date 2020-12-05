@@ -9,8 +9,8 @@ import java.util.Random;
 import org.testng.Assert;
 
 public class Utilities {
-	
-	//Reusable Component =>  Date,Time Stamp  
+
+	// Reusable Component => Date,Time Stamp
 
 	private Pojo objPojo;
 
@@ -19,7 +19,7 @@ public class Utilities {
 	}
 
 	public String getRandomString(int lenght) {
-		String allowedChars = "abcdefghz";
+		String allowedChars = "abcdefghijklmnopqrstuvwxyz";
 		String randomstring = "";
 		for (int i = 0; i < lenght; i++) {
 			int rnum = (int) Math.floor(Math.random() * allowedChars.length());
@@ -27,9 +27,7 @@ public class Utilities {
 		}
 		return randomstring;
 	}
-	
-	
-	// Generate random String of given length
+
 	public String getRandomNumberString(int lenght) {
 		String allowedChars = "0123456789";
 		String randomstring = "";
@@ -39,7 +37,6 @@ public class Utilities {
 		}
 		return randomstring;
 	}
-	
 
 	public void logReporter(String step, boolean blnFlag) {
 
@@ -79,9 +76,9 @@ public class Utilities {
 	/*
 	 * @Method : getDateInSpecifiedFormat
 	 * 
-	 * @Description : This method takes parameter of your required DateFormat
-	 * Type Like: dd-mm-YYYY DD.MM.YYYY and in return it will give you today's
-	 * date in specified date format
+	 * @Description : This method takes parameter of your required DateFormat Type
+	 * Like: dd-mm-YYYY DD.MM.YYYY and in return it will give you today's date in
+	 * specified date format
 	 * 
 	 * @param : dateFormat like : dd-MM-YYYY
 	 * 

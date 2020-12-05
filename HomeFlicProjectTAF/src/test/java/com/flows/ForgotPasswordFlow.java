@@ -7,13 +7,12 @@ import com.popupFactory.ForgotPasswordPage;
 
 public class ForgotPasswordFlow {
 
-
 	private Pojo objPojo;
 	private String testData = "";
 	private HomePage objHomePage;
 	private LoginPage objLoginPage;
 	private ForgotPasswordPage objForgotPasswordPage;
-	
+
 	public ForgotPasswordFlow(Pojo pojo) {
 		this.objPojo = pojo;
 		objHomePage = new HomePage(objPojo);
@@ -28,16 +27,12 @@ public class ForgotPasswordFlow {
 		objLoginPage.verifyLoginPageHeader();
 		objLoginPage.clickOnForgotPassword();
 		objForgotPasswordPage.verifyForgotPasswordHeader();
-	
+
 		testData = objPojo.getObjUtilities().dpString("strEmail");
-		if(!testData.equals(""))
+		if (!testData.equals(""))
 			objForgotPasswordPage.setUSerID(testData);
 		objForgotPasswordPage.clickOnSubmitBtn();
-		
-		
-		
+
 	}
-	
-	
-	
+
 }

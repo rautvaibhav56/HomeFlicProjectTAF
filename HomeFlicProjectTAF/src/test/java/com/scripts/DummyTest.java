@@ -24,43 +24,43 @@ public class DummyTest extends BaseTest {
 
 	@Test(priority = 1, enabled = true)
 	public void test() {
-		
+
 		objDummyPage.clickLinkLogin();
 		objDummyPage.setUSerID("Verve");
 		objDummyPage.setPassword("Square");
 		objDummyPage.clickLogin();
 	}
 
-	/*@Test(priority = 2)
-	public void TCID_002_VerifyLogin() {
-
-		this.loadTestData("TCID_002_VerifyLogin");
-
-		String testData = this.getObjUtilities().dpString("UserName");
-		System.out.println("Excel Data ===> " + testData);
-
-		String testData1 = this.getObjUtilities().dpString("Password");
-		System.out.println("Excel Data ===> " + testData1);
-
-		String testData2 = this.getObjUtilities().dpString("Age");
-		System.out.println("Excel Data ===> " + testData2);
-
-	}
-
-	@Test(priority = 3)
-	public void TCID_001_VerifyUserLoggedIn() {
-
-		this.loadTestData("TCID_001_VerifyUserLoggedIn");
-
-		String testData = this.getObjUtilities().dpString("City");
-		System.out.println("Excel Data ===> " + testData);
-		
-		
-	}*/
+	/*
+	 * @Test(priority = 2) public void TCID_002_VerifyLogin() {
+	 * 
+	 * this.loadTestData("TCID_002_VerifyLogin");
+	 * 
+	 * String testData = this.getObjUtilities().dpString("UserName");
+	 * System.out.println("Excel Data ===> " + testData);
+	 * 
+	 * String testData1 = this.getObjUtilities().dpString("Password");
+	 * System.out.println("Excel Data ===> " + testData1);
+	 * 
+	 * String testData2 = this.getObjUtilities().dpString("Age");
+	 * System.out.println("Excel Data ===> " + testData2);
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 3) public void TCID_001_VerifyUserLoggedIn() {
+	 * 
+	 * this.loadTestData("TCID_001_VerifyUserLoggedIn");
+	 * 
+	 * String testData = this.getObjUtilities().dpString("City");
+	 * System.out.println("Excel Data ===> " + testData);
+	 * 
+	 * 
+	 * }
+	 */
 
 	@AfterClass
 	public void tearDownEnvironment() {
-	//	this.getDriver().close();
+		// this.getDriver().close();
 	}
 
 }

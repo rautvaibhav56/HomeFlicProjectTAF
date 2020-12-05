@@ -8,10 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseTest extends Pojo {
-//Centralized Env Set Up class , config property , Load data provider , Load Test Data
+//Centralized Env Set Up class 
 
 	private WebDriver webDriver;
 	private String baseURL;
+	
 	private Properties objConfig;
 	private TestDataBean objTestDataBean;
 	private InitializtionAndTearDownenvironment objInitializtionAndTearDownenvironment;
@@ -28,15 +29,15 @@ public class BaseTest extends Pojo {
 		this.setObjConfig(objConfig);
 		baseURL = objConfig.getProperty("AUT_URL");
 		this.setBaseURL(baseURL);
-
+		
 		objTestDataBean = new TestDataBean();
 		this.setObjTestDataBean(objTestDataBean);
 		objInitializtionAndTearDownenvironment = new InitializtionAndTearDownenvironment();
 
-		// webDriver=objInitializtionAndTearDownenvironment.initializeWebDriverEnvironment("chrome");
+
 		webDriver = objInitializtionAndTearDownenvironment.initializeWebDriverEnvironment(objConfig);
 		this.setDriver(webDriver);
-		// webDriver.get("https://www.google.com");
+	
 		webDriver.get(baseURL);
 
 		webDriverWait = new WebDriverWait(webDriver, Integer.parseInt(objConfig.getProperty("webdriverWait")));
