@@ -2,20 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-05T09:28:24Z" name="Default suite" finished-at="2020-12-05T09:28:45Z" duration-ms="21212">
+  <suite started-at="2020-12-06T09:04:36Z" name="Default suite" finished-at="2020-12-06T09:06:06Z" duration-ms="90537">
     <groups>
     </groups>
-    <test started-at="2020-12-05T09:28:24Z" name="Default test" finished-at="2020-12-05T09:28:45Z" duration-ms="21212">
+    <test started-at="2020-12-06T09:04:36Z" name="Default test" finished-at="2020-12-06T09:06:06Z" duration-ms="90537">
       <class name="com.scripts.RegisterTest">
-        <test-method is-config="true" signature="initializeWebEnvironmentAndTestDataSetupForRegisterNewUser()[pri:0, instance:com.scripts.RegisterTest@7de62196]" started-at="2020-12-05T14:58:24Z" name="initializeWebEnvironmentAndTestDataSetupForRegisterNewUser" finished-at="2020-12-05T14:58:40Z" duration-ms="15673" status="PASS">
+        <test-method is-config="true" signature="initializeWebEnvironmentAndTestDataSetupForRegisterNewUser()[pri:0, instance:com.scripts.RegisterTest@7de62196]" started-at="2020-12-06T14:34:36Z" name="initializeWebEnvironmentAndTestDataSetupForRegisterNewUser" finished-at="2020-12-06T14:36:01Z" duration-ms="85191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebEnvironmentAndTestDataSetupForRegisterNewUser -->
-        <test-method signature="TCID_101_doRegister()[pri:0, instance:com.scripts.RegisterTest@7de62196]" started-at="2020-12-05T14:58:40Z" name="TCID_101_doRegister" finished-at="2020-12-05T14:58:45Z" duration-ms="5509" status="PASS">
+        <test-method signature="TCID_101_doRegister()[pri:0, instance:com.scripts.RegisterTest@7de62196]" started-at="2020-12-06T14:36:01Z" name="TCID_101_doRegister" finished-at="2020-12-06T14:36:06Z" duration-ms="5323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCID_101_doRegister -->
-        <test-method is-config="true" signature="tearDownEnvironment()[pri:0, instance:com.scripts.RegisterTest@7de62196]" started-at="2020-12-05T14:58:45Z" name="tearDownEnvironment" finished-at="2020-12-05T14:58:45Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownEnvironment()[pri:0, instance:com.scripts.RegisterTest@7de62196]" started-at="2020-12-06T14:36:06Z" name="tearDownEnvironment" finished-at="2020-12-06T14:36:06Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownEnvironment -->
