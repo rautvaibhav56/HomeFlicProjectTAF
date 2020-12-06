@@ -25,26 +25,26 @@ public class LoginPage {
 
 	public void verifyLoginPageHeader() {
 
-		objPojo.getObjWrapperSeleniumFunctions().waitFor(4);
+		objPojo.getObjWrapperSeleniumFunctions().waitFor(2);
 		objPojo.getObjUtilities().logReporter("Verify login page is displayed.",
 				objPojo.getObjWrapperSeleniumFunctions().checkElementDisplayed(loc_hdr_LoginPage));
 
 	}
 
 	public void setUSerID(String strUserName) {
-		objPojo.getObjWrapperSeleniumFunctions().waitFor(2);
+		
 		objPojo.getObjUtilities().logReporter("Set USer ID : " + strUserName,
 				objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_UserName, strUserName));
 	}
 
 	public void setPassword(String strPassword) {
-		objPojo.getObjWrapperSeleniumFunctions().waitFor(2);
+		
 		objPojo.getObjUtilities().logReporter("Set Password : " + strPassword,
 				objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_Password, strPassword));
 	}
 
 	public void clickLogin() {
-		objPojo.getObjWrapperSeleniumFunctions().waitFor(1);
+		objPojo.getObjWrapperSeleniumFunctions().waitFor(3);
 		objPojo.getObjUtilities().logReporter("Click Login : ",
 				objPojo.getObjWrapperSeleniumFunctions().click(loc_btn_Login));
 	}

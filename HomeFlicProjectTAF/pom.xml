@@ -11,6 +11,7 @@
 	<properties>
 
 		<!-- Test suite name -->
+		
 		<!-- For execution of testng.xml use following -->
 		<suiteName>Smoke_TestSuite</suiteName>
 		<suiteXMLpath>Smoke_TestSuite</suiteXMLpath>

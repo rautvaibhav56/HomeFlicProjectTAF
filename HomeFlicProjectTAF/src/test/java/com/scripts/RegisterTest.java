@@ -32,7 +32,7 @@ public class RegisterTest extends BaseTest {
 
 	@AfterClass
 	public void tearDownEnvironment() {
-		// this.getDriver().close();
+	 this.getDriver().close();
 	}
 
 }

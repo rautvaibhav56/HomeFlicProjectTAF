@@ -31,8 +31,7 @@ public class RegisterPage {
 	}
 
 	public void verifyRegisterPageHeader() {
-
-		objPojo.getObjWrapperSeleniumFunctions().waitFor(2);
+		
 		objPojo.getObjUtilities().logReporter("Verify Register page is displayed.",
 				objPojo.getObjWrapperSeleniumFunctions().checkElementDisplayed(loc_hdr_RegisterPage));
 
@@ -52,30 +51,15 @@ public class RegisterPage {
 
 	public void setEmail() {
 		objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_Email,
-				"vaibhav"+objPojo.getObjUtilities().getRandomNumberString(3) + "@yopmail.com");
+				"vaibhav" + objPojo.getObjUtilities().getRandomNumberString(3) + "@yopmail.com");
 
 	}
 
 	public void setPhone() {
 		objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_Phone,
-				"678"+objPojo.getObjUtilities().getRandomNumberString(7));
-
-	
+				"678" + objPojo.getObjUtilities().getRandomNumberString(7));
 
 	}
-
-	/*
-	 * public String setPhone(String strPhone) {
-	 * objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_Phone,
-	 * objConfig.getProperty("strPhone")+objPojo.getObjUtilities().
-	 * getRandomNumberString(7));
-	 * 
-	 * //objRegisterPage.setPhone(objConfig.getProperty("strPhone")+objPojo.
-	 * getObjUtilities().getRandomNumberString(7)); return strPhone;
-	 * 
-	 * 
-	 * }
-	 */
 
 	public void setPassword(String strPassword) {
 

@@ -18,7 +18,7 @@ public class MyProfilePage {
 
 	public void verifyLogoutLinkDisplayed() {
 
-		objPojo.getObjWrapperSeleniumFunctions().waitFor(10);
+		objPojo.getObjWrapperSeleniumFunctions().waitFor(1);
 		objPojo.getObjUtilities().logReporter("Verify 'Logout' link is displayed on My profile Page ",
 				objPojo.getObjWrapperSeleniumFunctions().checkElementDisplayed(loc_lnk_Logout));
 

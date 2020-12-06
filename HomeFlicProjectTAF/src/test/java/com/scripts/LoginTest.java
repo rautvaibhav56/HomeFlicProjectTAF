@@ -31,7 +31,7 @@ public class LoginTest extends BaseTest {
 		this.initializeWebEnvironment("excelFiles/VMR");
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void TCID_101_VerifyLogin() {
 
 		this.loadTestData("TCID_101_VerifyLogin");
@@ -39,7 +39,7 @@ public class LoginTest extends BaseTest {
 		objMyProfilePage.verifyLogoutLinkDisplayed();
 	}
 
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void TCID_102_ForgotPassword() {
 
 		this.loadTestData("TCID_102_ForgotPassword");
