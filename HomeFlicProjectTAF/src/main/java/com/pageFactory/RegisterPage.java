@@ -52,15 +52,15 @@ public class RegisterPage {
 
 	public void setEmail() {
 		objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_Email,
-				objPojo.getObjUtilities().getRandomString(4) + "@yopmail.com");
+				"vaibhav"+objPojo.getObjUtilities().getRandomNumberString(3) + "@yopmail.com");
 
 	}
 
-	public String setPhone(String strPhone) {
+	public void setPhone() {
 		objPojo.getObjWrapperSeleniumFunctions().setText(loc_inp_Phone,
-				objPojo.getObjUtilities().getRandomNumberString(7) + "678");
+				"678"+objPojo.getObjUtilities().getRandomNumberString(7));
 
-		return strPhone;
+	
 
 	}
 

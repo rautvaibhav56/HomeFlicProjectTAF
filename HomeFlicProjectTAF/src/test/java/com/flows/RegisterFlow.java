@@ -30,7 +30,7 @@ public class RegisterFlow extends BaseTest {
 		objRegisterPage.printTestDatabeanForRegister();
 		objRegisterPage.setFirstName();
 		objRegisterPage.setLastName();
-		objRegisterPage.setPhone("");
+		objRegisterPage.setPhone();
 		// objRegisterPage.setPhone(objConfig.getProperty("strPhone")+objPojo.getObjUtilities().getRandomNumberString(7));
 		objRegisterPage.setEmail();
 		objRegisterPage.setPassword("student@123");
