@@ -25,8 +25,6 @@ public class LoginLogoutFlow {
 
 		objHomePage.clickLinkLogin();
 		objLoginPage.verifyLoginPageHeader();
-		//objLoginPage.clickOnForgotPassword();
-
 		testData = objPojo.getObjUtilities().dpString("strUserName");
 		if (!testData.equals(""))
 			objLoginPage.setUSerID(testData);
@@ -36,5 +34,6 @@ public class LoginLogoutFlow {
 		objLoginPage.clickLogin();
 
 	}
+	
 
 }

@@ -21,7 +21,7 @@ public class RegisterFlow extends BaseTest {
 		
 	}
 
-	public String doRegister() {
+	public void doRegister() {
 
 		objHomePage.clickLinkRegister();
 		objRegisterPage.verifyRegisterPageHeader();
@@ -34,7 +34,7 @@ public class RegisterFlow extends BaseTest {
 		objRegisterPage.setUserType();
 		objRegisterPage.clickRegister();
 
-		return testData + "" + testData;
+		
 
 	}
 

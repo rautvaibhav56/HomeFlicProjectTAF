@@ -27,7 +27,6 @@ public class ForgotPasswordFlow {
 		objLoginPage.verifyLoginPageHeader();
 		objLoginPage.clickOnForgotPassword();
 		objForgotPasswordPage.verifyForgotPasswordHeader();
-
 		testData = objPojo.getObjUtilities().dpString("strEmail");
 		if (!testData.equals(""))
 			objForgotPasswordPage.setUSerID(testData);
